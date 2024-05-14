@@ -209,6 +209,11 @@ class Snake(gym.Env):
         for body in self.snake_body:
             body.goto(1000, 1000)
 
+        for element in self.snake_body:
+            turtle = self.win.turtles().index(element)
+            self.win.turtles()[turtle].reset()
+            del self.win.turtles()[turtle]
+
         self.snake_body = []
         self.snake.goto(SNAKE_START_LOC_H, SNAKE_START_LOC_V)
         self.snake.direction = 'stop'
