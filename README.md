@@ -1,4 +1,4 @@
-Snake
+Snake (with fixed speed reduction)
 
 This project contains the following files:
 1. snake_env.py : run this and you can play the game Snake by yourself
